@@ -121,6 +121,7 @@
     let firstVal = 0;
     let secondVal = 0;
     let result =0;
+    let numbers = 0;
     $('button').click(function (e) {
         // console.log($(this).text())
         let inputVal = $(this).text();
@@ -132,58 +133,71 @@
         }
         if (inputVal === '7'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '8'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '9'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '4'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '5'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '6'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '1'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '2'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '3'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '0'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
+            numbers = $('#numberInput').val();
         }
         if (inputVal === '.'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
         }
         if (inputVal === '+'){
-            if (firstVal === 0){
+            if (result === 0){
                 firstVal = Number($('#numberInput').val());
                 $('#numberInput').val("");
             }else {
-                secondVal = Number($('#numberInput').val());
+                // secondVal = Number($('#numberInput').val());
+                numbers = result;
                 $('#numberInput').val("");
-                calculation();
             }
         }
         if (inputVal === '='){
-            $('#numberInput').val(result);
-            console.log(firstVal)
+            secondVal = Number($('#numberInput').val());
+            result = firstVal+secondVal;
+            console.log(result + "resl")
         }
 
     });
-    function calculation() {
+    /*function calculation() {
+        secondVal = Number($('#numberInput').val());
         result = firstVal + secondVal;
+        console.log(result)
         firstVal =0;
         secondVal= 0;
-    }
+    }*/
 
 </script>
 </body>
