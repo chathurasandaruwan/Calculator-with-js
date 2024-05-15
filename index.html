@@ -15,8 +15,8 @@
             display: flex;
         }
         .calculator{
-            width: 500px;
-            height: 600px;
+            width: 450px;
+            height: 560px;
             background-color: white;
             /*background: none;*/
             position: absolute;
@@ -28,13 +28,13 @@
             border-radius: 30px;
         }
         #numberInput{
-            width: 350px;
+            width: 300px;
             height: 45px;
             border: none;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
             position: absolute;
-            right: 20px;
-            top: 25px;
+            right: 40px;
+            top: 40px;
         }
         button{
             width: 80px;
@@ -45,7 +45,18 @@
         }
         #C-btn{
             margin-right: 300px;
-            margin-left: 30px;
+            margin-left: 20px;
+            margin-top: 25px;
+        }
+        .btnSet{
+            width: 425px;
+            height: fit-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 40px;
+            margin: auto;
+            /*background-color: purple;*/
         }
 
     </style>
@@ -55,23 +66,23 @@
     <main class="calculator">
         <button id="C-btn">c</button>
         <input type="text" id="numberInput">
-        <div id="btnSet">
+        <div class="btnSet">
             <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
-            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>+</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>/</button>
+            <button>0</button>
+            <button>.</button>
+            <button>=</button>
+            <button>*</button>
         </div>
     </main>
 </section>
