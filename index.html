@@ -177,12 +177,12 @@
             calculation(Number($('#numberInput').val()));
         }
         if (inputVal === '+'){
-            if (result === 0){
+            if (result1 === 0){
                 firstVal = Number($('#numberInput').val());
                 $('#numberInput').val("");
             }else {
                 // secondVal = Number($('#numberInput').val());
-                firstVal = result;
+                firstVal = result1;
                 $('#numberInput').val("");
             }
         }
@@ -190,6 +190,7 @@
             secondVal = Number($('#numberInput').val());
             result = firstVal+secondVal;
             console.log(result + "resl")
+            result1 =0 ;
         }
 
     });
