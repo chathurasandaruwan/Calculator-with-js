@@ -44,7 +44,6 @@
             font-weight: bold;
             font-size: 30px;
             color: white;
-            /*background-color: rgba(60, 64, 67, 3);*/
             background-color: rgba(60, 64, 67, 3);
         }
         button:hover{
@@ -124,7 +123,6 @@
     let result1 =0;
     let process;
     $('button').click(function (e) {
-        // console.log($(this).text())
         let inputVal = $(this).text();
         if (inputVal === 'AC'){
             $('#numberInput').val("");
@@ -222,29 +220,26 @@
                 result = firstVal + secondVal;
                 $('#numberInput').val(result);
                 console.log(result + "resl");
-                result1 =0 ;
             }
             if (process === '-'){
                 secondVal = Number($('#numberInput').val());
                 result = firstVal - secondVal;
                 $('#numberInput').val(result);
                 console.log(result + "resl");
-                result1 =0 ;
             }
             if (process === '*'){
                 secondVal = Number($('#numberInput').val());
                 result = firstVal * secondVal;
                 $('#numberInput').val(result);
                 console.log(result + "resl");
-                result1 =0 ;
             }
             if (process === '/'){
                 secondVal = Number($('#numberInput').val());
                 result = firstVal / secondVal;
                 $('#numberInput').val(result);
                 console.log(result + "resl");
-                result1 =0 ;
             }
+            result1 =0 ;
         }
 
     });
