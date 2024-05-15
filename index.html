@@ -196,17 +196,34 @@
                 $('#numberInput').val("");
             }
         }
+        if (inputVal === '*'){
+            process = $(this).text();
+            if (result1 === 0){
+                firstVal = Number($('#numberInput').val());
+                $('#numberInput').val("");
+            }else {
+                firstVal = result1;
+                $('#numberInput').val("");
+            }
+        }
         if (inputVal === '='){
             if (process === '+'){
                 secondVal = Number($('#numberInput').val());
-                result = firstVal+secondVal;
+                result = firstVal + secondVal;
                 $('#numberInput').val(result);
                 console.log(result + "resl");
                 result1 =0 ;
             }
             if (process === '-'){
                 secondVal = Number($('#numberInput').val());
-                result = firstVal-secondVal;
+                result = firstVal - secondVal;
+                $('#numberInput').val(result);
+                console.log(result + "resl");
+                result1 =0 ;
+            }
+            if (process === '*'){
+                secondVal = Number($('#numberInput').val());
+                result = firstVal * secondVal;
                 $('#numberInput').val(result);
                 console.log(result + "resl");
                 result1 =0 ;
@@ -219,8 +236,12 @@
             result1 = firstVal + val;
             console.log(result1);
         }
-        if (process ==='+'){
+        if (process ==='-'){
             result1 = firstVal - val;
+            console.log(result1);
+        }
+        if (process ==='*'){
+            result1 = firstVal * val;
             console.log(result1);
         }
     }
