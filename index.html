@@ -43,16 +43,25 @@
             margin: 10px;
             font-weight: bold;
             font-size: 30px;
+            color: white;
+            /*background-color: rgba(60, 64, 67, 3);*/
+            background-color: rgba(60, 64, 67, 3);
         }
         button:hover{
             box-shadow: rgba(255, 255, 255) 0px 0px 25px 0px;
+            border: 2px white solid;
         }
-        #C-btn{
+        #AC-btn{
             margin-right: 300px;
             margin-left: 20px;
             margin-top: 25px;
             background-color: grey;
-            color: white;
+            color: black;
+        }
+        #AC-btn:hover{
+            color: red;
+            border: 2px white solid;
+            box-shadow: rgba(255, 255, 255) 0px 0px 25px 0px;
         }
         .btnSet{
             width: 425px;
@@ -70,7 +79,7 @@
 <body>
 <section>
     <main class="calculator">
-        <button id="C-btn">c</button>
+        <button id="AC-btn">AC</button>
         <input type="text" id="numberInput">
         <div class="btnSet">
             <button>7</button>
