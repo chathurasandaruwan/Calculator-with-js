@@ -94,7 +94,7 @@
 <section>
     <main class="calculator">
         <button id="AC-btn">AC</button>
-        <input type="text" id="numberInput" disabled="">
+        <input type="text" id="numberInput" disabled="" placeholder="0">
         <div class="btnSet">
             <button >7</button>
             <button >8</button>
@@ -124,9 +124,40 @@
         if (inputVal === 'AC'){
             $('#numberInput').val("");
         }
+        if (inputVal === '7'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '8'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '9'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '4'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '5'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '6'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '1'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '2'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '3'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '0'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
+        if (inputVal === '.'){
+            $('#numberInput').val( $('#numberInput').val()+$(this).text());
+        }
 
-        // $('#numberInput').val("");
-        $('#numberInput').val( $('#numberInput').val()+$(this).text());
     });
 
 </script>
