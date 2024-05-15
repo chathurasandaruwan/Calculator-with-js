@@ -181,7 +181,6 @@
                 firstVal = Number($('#numberInput').val());
                 $('#numberInput').val("");
             }else {
-                // secondVal = Number($('#numberInput').val());
                 firstVal = result1;
                 $('#numberInput').val("");
             }
@@ -189,7 +188,8 @@
         if (inputVal === '='){
             secondVal = Number($('#numberInput').val());
             result = firstVal+secondVal;
-            console.log(result + "resl")
+            $('#numberInput').val(result);
+            console.log(result + "resl");
             result1 =0 ;
         }
 
