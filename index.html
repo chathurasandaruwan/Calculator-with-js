@@ -28,12 +28,12 @@
         }
         #numberInput{
             width: 300px;
-            height: 45px;
+            height: 50px;
             border: none;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
             position: absolute;
             right: 40px;
             top: 40px;
+            border-radius: 10px;
         }
         button{
             width: 80px;
@@ -52,9 +52,12 @@
             border: 2px white solid;
         }
         #AC-btn{
+            width: 70px;
+            height: 50px;
+            border-radius: 10px;
             margin-right: 300px;
-            margin-left: 20px;
-            margin-top: 25px;
+            margin-left: 25px;
+            margin-top: 40px;
             background-color: grey;
             color: black;
         }
@@ -72,7 +75,12 @@
             bottom: 40px;
             margin: auto;
         }
-
+        .primaryBtnSet{
+            background-color: orange;
+        }
+        #btn-eq{
+            background-color: blue;
+        }
 
     </style>
 </head>
@@ -82,22 +90,22 @@
         <button id="AC-btn">AC</button>
         <input type="text" id="numberInput">
         <div class="btnSet">
-            <button id="btn-7">7</button>
-            <button id="btn-8">8</button>
-            <button id="btn-9">9</button>
-            <button id="btn-+">+</button>
-            <button id="btn-4">4</button>
-            <button id="btn-5">5</button>
-            <button id="btn-6">6</button>
-            <button id="btn-">-</button>
-            <button id="btn-1">1</button>
-            <button id="btn-2">2</button>
-            <button id="btn-3">3</button>
-            <button id="btn-/">/</button>
-            <button id="btn-0">0</button>
-            <button id="btn-.">.</button>
-            <button id="btn-=">=</button>
-            <button id="btn-*">*</button>
+            <button >7</button>
+            <button >8</button>
+            <button >9</button>
+            <button class="primaryBtnSet">+</button>
+            <button >4</button>
+            <button >5</button>
+            <button >6</button>
+            <button class="primaryBtnSet">-</button>
+            <button >1</button>
+            <button >2</button>
+            <button >3</button>
+            <button class="primaryBtnSet">/</button>
+            <button >0</button>
+            <button >.</button>
+            <button id="btn-eq">=</button>
+            <button class="primaryBtnSet">*</button>
         </div>
     </main>
 </section>
