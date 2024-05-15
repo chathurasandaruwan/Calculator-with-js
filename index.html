@@ -118,11 +118,17 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+    let firstVal = 0;
+    let secondVal = 0;
+    let result =0;
     $('button').click(function (e) {
-        console.log($(this).text())
+        // console.log($(this).text())
         let inputVal = $(this).text();
         if (inputVal === 'AC'){
             $('#numberInput').val("");
+            firstVal =0;
+            secondVal= 0;
+            result = 0;
         }
         if (inputVal === '7'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
@@ -157,8 +163,27 @@
         if (inputVal === '.'){
             $('#numberInput').val( $('#numberInput').val()+$(this).text());
         }
+        if (inputVal === '+'){
+            if (firstVal === 0){
+                firstVal = Number($('#numberInput').val());
+                $('#numberInput').val("");
+            }else {
+                secondVal = Number($('#numberInput').val());
+                $('#numberInput').val("");
+                calculation();
+            }
+        }
+        if (inputVal === '='){
+            $('#numberInput').val(result);
+            console.log(firstVal)
+        }
 
     });
+    function calculation() {
+        result = firstVal + secondVal;
+        firstVal =0;
+        secondVal= 0;
+    }
 
 </script>
 </body>
