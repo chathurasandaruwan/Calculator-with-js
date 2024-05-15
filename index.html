@@ -10,22 +10,21 @@
         section{
             width: 100vw;
             height: 100vh;
-            background-color: black;
+            background-color: white;
             position: relative;
             display: flex;
         }
         .calculator{
             width: 450px;
             height: 560px;
-            background-color: white;
-            /*background: none;*/
+            background-color: black;
             position: absolute;
             top: 0;
             right: 0;
             left: 0;
             bottom: 0;
             margin: auto;
-            border-radius: 30px;
+            border-radius: 20px;
         }
         #numberInput{
             width: 300px;
@@ -42,11 +41,18 @@
             border-radius: 100%;
             border: none;
             margin: 10px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        button:hover{
+            box-shadow: rgba(255, 255, 255) 0px 0px 25px 0px;
         }
         #C-btn{
             margin-right: 300px;
             margin-left: 20px;
             margin-top: 25px;
+            background-color: grey;
+            color: white;
         }
         .btnSet{
             width: 425px;
