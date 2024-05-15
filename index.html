@@ -81,6 +81,12 @@
         #btn-eq{
             background-color: blue;
         }
+        #numberInput{
+            text-align: right;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -114,6 +120,13 @@
 <script>
     $('button').click(function (e) {
         console.log($(this).text())
+        let inputVal = $(this).text();
+        if (inputVal === 'AC'){
+            $('#numberInput').val("");
+        }
+
+        // $('#numberInput').val("");
+        $('#numberInput').val( $('#numberInput').val()+$(this).text());
     });
 
 </script>
